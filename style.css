@@ -1,3 +1,30 @@
-body {
-    background-color: crimson;
+p {
+    background-color: #FFA07A;
 }
+
+#test {
+    background-color: #ADD8E6;      # - обозначение класса id
+    }
+
+.text {
+    background-color: yellow;     . - обозначение класса "class"
+    }
+
+ .text-a {
+    background-color: #6495ED;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+.text-b {
+    background-color: green;
+    font-size: 25px;
+    font-family: 'Verdana', 'Geneva', Tahoma, sans-serif;
+    font-weight: 100;
+    width: 50%;
+    height: 200px;
+    border-color: deeppink;
+    border-style: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    }
