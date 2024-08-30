@@ -28,3 +28,78 @@ p {
     border-width: 10px;
     border-radius: 20px;
     }
+
+div {
+    width: 50px;
+    height: 100px;
+    background-color: #FFA07A;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative; <!-- position: relative; - это свойство, которое позволяет позиционировать элемент
+        относительно его обычного положения на странице. -->
+    top: 50px;
+}
+
+h1::first-letter {
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: yellow;
+}
+
+h1::before {
+    content: "Hello";
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: green;
+}
+
+h1::after {
+    content: "World!";
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: green;
+}
+
+div: {
+    width: 100px;
+    height: 100px;
+    background-color: #FFA07A;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+div:hover {
+    background-color: #0080ff;
+    width: 150px;
+    height: 150px;
+    # добавляем свойство для плавности:
+    transition: 1s;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: green;
+}
+
+a:active {
+    color: yellow;
+}
+
+a:hover {
+    color: blue;
+}
