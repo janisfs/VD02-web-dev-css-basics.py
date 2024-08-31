@@ -1,74 +1,49 @@
-<style>
-      html {
-        font-family: sans-serif;
-      }
-
-      body {
-        margin: 5;
-      }
-
-      header {
-        background: #6A5ACD;
-        height: 100px;
-      }
-
-      h1 {
-        text-align: center;
-        color: white;
-        line-height: 100px;
-        margin: 0;
-      }
-
-      article {
-        padding: 10px;
-        margin: 10px;
-        background: #AFEEEE;
-      }
-
-
-
-      section {
-        display: flex;
-        flex-direction: column;
-      }
-</style>
-
-
-.article {
-  padding: 10px;
-  margin: 10px;
-  background: #4682B4;
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Это центрирует содержимое по горизонтали */
-  border-radius: 20px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
-article img {
-  max-width: 100%; /* Изменено с width: 100% */
-  height: 200px; /* или другая желаемая высота */
-  object-fit: cover;
-  object-position: center;
-  margin-bottom: 10px;
-  border-radius: 20px;
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-article img {
-  display: block; /* Добавьте это */
-  margin-left: auto;
-  margin-right: auto;
+.card {
+    width: 300px;
+    background-color: #ADFF2F;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Добавлено для выравнивания содержимого по вертикали */
 }
 
-/* Медиа-запрос для больших экранов */
-@media (min-width: 768px) {
-  article img {
-    height: 300px; /* Увеличенная высота для больших экранов */
-  }
+.card img {
+    width: auto; /* Изменение ширины изображения на автоматическую */
+    max-width: 80%; /* Максимальная ширина изображения 80% от ширины карточки */
+    max-height: 150px; /* Ограничение максимальной высоты изображения */
+    border-radius: 20px; /* Скругление углов изображения */
+    margin: 10px auto; /* Внешние отступы вокруг изображения и центровка */
+    display: block; /* Блочный элемент для центрирования */
 }
 
-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Это центрирует статьи в секции */
+.card-text {
+    padding: 10px;
+    flex-grow: 1; /* Заполнение оставшегося пространства текстом */
 }
 
+.card-stats {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+}
