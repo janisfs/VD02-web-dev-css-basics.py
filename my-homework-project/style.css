@@ -1,0 +1,28 @@
+article {
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article img {
+  width: 100%;
+  height: 200px; /* Фиксированная высота, можно настроить */
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 10px;
+}
+
+/* Медиа-запрос для больших экранов */
+@media (min-width: 768px) {
+  article img {
+    height: 300px; /* Увеличенная высота для больших экранов */
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
