@@ -1,18 +1,62 @@
-article {
+<style>
+      html {
+        font-family: sans-serif;
+      }
+
+      body {
+        margin: 5;
+      }
+
+      header {
+        background: #6A5ACD;
+        height: 100px;
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        line-height: 100px;
+        margin: 0;
+      }
+
+      article {
+        padding: 10px;
+        margin: 10px;
+        background: #AFEEEE;
+      }
+
+
+
+      section {
+        display: flex;
+        flex-direction: column;
+      }
+</style>
+
+
+.article {
   padding: 10px;
   margin: 10px;
-  background: aqua;
+  background: #4682B4;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Это центрирует содержимое по горизонтали */
+  border-radius: 20px;
 }
 
 article img {
-  width: 100%;
-  height: 200px; /* Фиксированная высота, можно настроить */
+  max-width: 100%; /* Изменено с width: 100% */
+  height: 200px; /* или другая желаемая высота */
   object-fit: cover;
   object-position: center;
   margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+article img {
+  display: block; /* Добавьте это */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Медиа-запрос для больших экранов */
@@ -25,4 +69,6 @@ article img {
 section {
   display: flex;
   flex-direction: column;
+  align-items: center; /* Это центрирует статьи в секции */
 }
+

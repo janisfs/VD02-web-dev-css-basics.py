@@ -1,23 +1,49 @@
-.card{
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
     width: 300px;
-    height: 700px;
     background-color: #ADFF2F;
     border-radius: 20px;
     margin: 10px;
-    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; /* Добавлено для выравнивания содержимого по вертикали */
 }
 
 .card img {
-    position: relative;
-    left: 46%;
-    transform: translateX(-50%);
-    height: 40%;
-    border-radius: 20px;
-    margin: 10px;
+    width: auto; /* Изменение ширины изображения на автоматическую */
+    max-width: 80%; /* Максимальная ширина изображения 80% от ширины карточки */
+    max-height: 150px; /* Ограничение максимальной высоты изображения */
+    border-radius: 20px; /* Скругление углов изображения */
+    margin: 10px auto; /* Внешние отступы вокруг изображения и центровка */
+    display: block; /* Блочный элемент для центрирования */
 }
 
-.card-text{
+.card-text {
     padding: 10px;
-    padding: 10px
+    flex-grow: 1; /* Заполнение оставшегося пространства текстом */
 }
 
+.card-stats {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+}
+
+.stat-value {
+    font-size: 24px;
+    font-weight: bold;
+}
